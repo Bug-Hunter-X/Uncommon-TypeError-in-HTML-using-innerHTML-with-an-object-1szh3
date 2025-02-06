@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text will be replaced.
+  </div>
+  <script>
+    // Incorrect usage of innerHTML with an object.  Causes a TypeError in some browsers.
+    document.getElementById("myDiv").innerHTML = { message: "Hello, world!" }; 
+  </script>
+</body>
+</html>
