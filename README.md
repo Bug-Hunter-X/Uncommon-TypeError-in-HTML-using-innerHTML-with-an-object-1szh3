@@ -1,0 +1,1 @@
+This repository demonstrates an uncommon bug in HTML related to the innerHTML property.  The bug arises when attempting to directly assign an object to the innerHTML property of an element.  Browsers generally expect a string for innerHTML and will throw a TypeError when given an object. This example shows how the error occurs and how to correct it.
